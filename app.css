@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color:#ccc;
+
+}
+
+#game-board{
+    background-color:#8dbfff;
+    width: 100vmin;
+    height: 100vmin;
+    display:grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    z-index: -1;
+}
+
+.sandbox {
+    margin-top: 70%;
+    border: 0.5empx solid black;
+    width: 100vmin;
+    height: 30vmin;
+    display:grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    z-index: 0;
+    
+}
+
+.sandbox-square{
+    background: url(./elements/ground.jpg);
+}
+
+.grass {
+    background: url(./elements/grass.jpg);
+    /* border: 0.5empx solid black; */
+    width: 100vmin;
+    height: 5vmin;   
+}
+
+.tree {
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 15vw;
+    height: 40vh;
+    top: 37vh;
+    z-index: -1;
+    margin-left: 30%;
+    display:grid; 
+    /* margin-left: 100px; */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tree-trunk {
+    width: 3vw;
+    height: 15vh;
+    /* display:grid; */
+    margin-left: 6vw;
+    /* grid-template-rows: repeat(1, 1fr); */
+    background: url(./elements/tree\ trunk.png);
+    
+}
+
+.leafs {
+    background: url(./elements/leafs.jpg);
+}
+
+.main-stone {
+    position: absolute;
+    /* border: 3px solid black; */
+    width: 10vw;
+    height: 7vh;
+    top: 63vh;
+    z-index: -1;
+    margin-left: 10%;
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    
+}
+.stone {
+    background: url(./elements/stone.jpg);
+}
+.stone2 {
+    position: absolute;
+    border: 3px solid black;
+    width: 5vw;
+    height: 10vh;
+    top: 63vh;
+    z-index: -1;
+    left: 60vw;
+    display:grid; 
+    background: url(./elements/stone.jpg)
+    /* grid-template-columns: repeat(3, 1fr);  */
+}
+
+.main-cloud {
+    position: absolute;
+    border: 1px solid black;
+    width: 20vw;
+    height: 10vh;
+    margin-top: 3%;
+    /* z-index: 1; */
+    margin-left: 10%;
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr); 
+     background-color: #ccc;
+    
+}
+
+.sidebar {
+    background-color: black;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+img {
+    width: 5vw;
+    height: 10%;
+    border: 2px solid #ccc;
+   
+    margin:10px;
+    
+}
+
+.bank {
+    width: 5vw;
+    height: 10%;
+    border: 2px solid #ccc;
+   
+    margin:100px;
+}
